@@ -1,5 +1,6 @@
 #include <iostream>
 #include <type_traits>
+// corrected from the book
 
 // Helper trait to detect the presence of a 'print' member function
 template<typename T>
@@ -22,7 +23,7 @@ public:
     // Enabled if T has a 'print' member function
     template<typename U = T>
     std::enable_if_t<HasPrint<U>::value, void> print() {
-        static_cast<U*>(this)->print();
+        reinterpret_cast<U*>(this)->print();
     }
 
     // Enabled if T does not have a 'print' member function
