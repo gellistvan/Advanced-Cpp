@@ -36,6 +36,50 @@ set(SOURCES
         07_metafunctions_type_traits/32_is_smart_ptr.cpp
         07_metafunctions_type_traits/33_combining_traits.cpp
         07_metafunctions_type_traits/34_type_traits_with_SPFINAE.cpp
+        08_TMP_with_cpp11_and_more/35_constexpr_factorial.cpp
+        08_TMP_with_cpp11_and_more/36_decltype_auto.cpp
+        08_TMP_with_cpp11_and_more/37_basic_consepts.cpp
+        08_TMP_with_cpp11_and_more/38_constexpr_fibonacci.cpp
+        08_TMP_with_cpp11_and_more/39_consteval_basics.cpp
+        08_TMP_with_cpp11_and_more/40_constexpr_compile_time_vector.cpp
+        08_TMP_with_cpp11_and_more/41_compile_time_validation.cpp
+        09_consepts_and_rangees/42_basic_consepts.cpp
+        09_consepts_and_rangees/43_combining_consepts.cpp
+        09_consepts_and_rangees/44_basics_of_ranges.cpp
+        09_consepts_and_rangees/45_range_adaptors.cpp
+        09_consepts_and_rangees/46_range_algorithms.cpp
+        09_consepts_and_rangees/47_consepts_with_ranges.cpp
+        09_consepts_and_rangees/48_filtering_and_transforming_data.cpp
+        10_TMP_with_Cpp23/49_constexpr_with_dynamic_memory.cpp
+        10_TMP_with_Cpp23/50_enhanced_type_traits.cpp
+        10_TMP_with_Cpp23/51_enhanced_template_syntax.cpp
+        10_TMP_with_Cpp23/52_constexpr_matrix_multiplication.cpp
+        10_TMP_with_Cpp23/53_advanced_type_manip_with_consepts.cpp
+        11_CRTP/60_basic_CRTP.cpp
+        11_CRTP/61_static_polymorphism_with_CRTP.cpp
+        11_CRTP/62_mixins_with_CRTP.cpp
+        11_CRTP/63_enforcing_interfaces_with_CRTP.cpp
+        11_CRTP/64_compile_time_computations_with_CRTP.cpp
+        11_CRTP/65_logging_mixin_with_CRTP.cpp
+        12_static_polymorphism/66_basic_policy_based_design.cpp
+        12_static_polymorphism/67_optimizing_compile_time_computations.cpp
+        12_static_polymorphism/68_comparing_static_and_dynamic_polymorphism.cpp
+        12_static_polymorphism/69_static_polymorphism_with_multiple_inheritance.cpp
+        12_static_polymorphism/70_polymorphic_container.cpp
+        13_type_erasure_basics/71_std_function.cpp
+        13_type_erasure_basics/72_custom_type_erasure.cpp
+        14_type_erasure_std_any_and_variant/73_heterogeneous_collections.cpp
+        14_type_erasure_std_any_and_variant/74_std_any_check_stored_type.cpp
+        14_type_erasure_std_any_and_variant/75_std_variant.cpp
+        14_type_erasure_std_any_and_variant/76_visiting_variant.cpp
+        14_type_erasure_std_any_and_variant/77_practical_std_any.cpp
+        14_type_erasure_std_any_and_variant/78_event_system_with_variant.cpp
+        15_type_erasure_with_std_function/79_event_handling_system.cpp
+        15_type_erasure_with_std_function/80_generic_algorithm.cpp
+        15_type_erasure_with_std_function/81_std_function_with_member_functions.cpp
+        15_type_erasure_with_std_function/82_chaining_callables.cpp
+
+
 
 
 )

@@ -1,4 +1,6 @@
 #include <iostream>
+// corrected from the book
+
 
 template <int ... N>
 struct NumberList;
