@@ -5,5 +5,5 @@ project(Advanced-CPP)
 include(common.cmake)
 
 # Add subdirectories for each module
-add_subdirectory(modules/Module1)
+add_subdirectory(modules/01_Templates)
 add_subdirectory(modules/Module2)
