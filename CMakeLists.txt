@@ -7,3 +7,4 @@ include(common.cmake)
 # Add subdirectories for each module
 add_subdirectory(modules/01_Templates)
 add_subdirectory(modules/02_STL)
+add_subdirectory(modules/03_Memory)
