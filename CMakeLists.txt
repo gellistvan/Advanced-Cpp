@@ -8,5 +8,6 @@ include(common.cmake)
 add_subdirectory(modules/01_Templates)
 add_subdirectory(modules/02_STL)
 add_subdirectory(modules/03_Memory)
+add_subdirectory(modules/04_Advanced_design_patterns)
 
 create_executable_from_source("advanced_cpp_examples" modules/advanced_cpp_examples.cpp)
