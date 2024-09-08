@@ -3,7 +3,7 @@
 #include <vector>
 
 template <typename Iterator>
-void print_iterator_info(Iterator it) {
+void print_iterator_info(Iterator /* unused */) {
     using traits = std::iterator_traits<Iterator>;
     std::cout << "Value type: " << typeid(typename traits::value_type).name() << std::endl;
     std::cout << "Difference type: " << typeid(typename traits::difference_type).name() << std::endl;
@@ -14,9 +14,8 @@ void print_iterator_info(Iterator it) {
 
 int main() {
     std::vector<int> vec = {1, 2, 3, 4, 5};
-    auto it = vec.begin();
 
-    print_iterator_info(it);
+    print_iterator_info(vec.begin());
 
     return 0;
 }
