@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <variant>
+#include <vector>
 
 template <typename Derived>
 class Shape {
@@ -70,6 +72,8 @@ private:
     std::string color;
 };
 
+using ShapeVariant = std::variant<Circle, Square>;
+
 int main() {
     Circle circle;
     Square square;
@@ -85,6 +89,18 @@ int main() {
 
     std::cout << "Circle color: " << circle.getColor() << std::endl; // Output: Circle color: red
     std::cout << "Square color: " << square.getColor() << std::endl; // Output: Square color: blue
+
+    // Create a vector of ShapeVariant
+    std::vector<ShapeVariant> shapes;
+
+    // Add Sphere and Square to the vector
+    shapes.emplace_back(Circle{});
+    shapes.emplace_back(Square{});
+
+    // Iterate over the shapes and call draw() directly
+    for (const auto& shape : shapes) {
+        std::visit([](const auto& s) { s.draw(); }, shape);
+    }
 
     return 0;
 }

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <variant>
 
 template <typename Derived>
 class Shape {
@@ -34,6 +36,8 @@ public:
     }
 };
 
+using ShapeVariant = std::variant<Circle, Square>;
+
 int main() {
     Circle circle;
     Square square;
@@ -43,6 +47,17 @@ int main() {
 
     circle.resize(2.0); // Output: Resizing Circle by factor 2
     square.resize(3.0); // Output: Resizing Square by factor 3
+
+    std::vector<ShapeVariant> shapes;
+
+    // Add Sphere and Square to the vector
+    shapes.emplace_back(Circle{});
+    shapes.emplace_back(Square{});
+
+    // Iterate over the shapes and call draw() directly
+    for (const auto& shape : shapes) {
+        std::visit([](const auto& s) { s.draw(); }, shape);
+    }
 
     return 0;
 }
